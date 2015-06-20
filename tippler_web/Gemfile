@@ -1,0 +1,4 @@
+source 'http://rubygems.org'
+gem 'sinatra-asset-pipeline'
+gem 'thin'
+gem 'byebug'

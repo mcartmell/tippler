@@ -1,0 +1,21 @@
+ul {
+  list-style: none;
+}
+.author {
+  font-weight: bold;
+}
+body { 
+  height: 100%;
+  font-family: 'Inconsolata', Monaco, monospace;
+}
+.inner-wrap {
+  height: 100%;
+}
+.main-section {
+  height: calc(100% - 45px);
+  overflow-y: scroll;
+}
+img.emoji {
+  height: 15px;
+  width: 15px;
+}

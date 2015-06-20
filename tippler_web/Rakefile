@@ -1,0 +1,4 @@
+require 'sinatra/asset_pipeline/task'
+require './tippler_web'
+
+Sinatra::AssetPipeline::Task.define! TipplerWeb

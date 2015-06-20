@@ -1,0 +1,39 @@
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/app.css">
+  <script type="text/javascript" src="/assets/app.js"></script>
+</head>
+<body>
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h1 class="title" id="current_area"><%= @current_channel.capitalize %></h1>
+      </section>
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Channels</label></li>
+        <% @all_areas.each do |area| %>
+          <li><a href="#" data-channel-label="<%= area %>" data-channel="<%= area.downcase.gsub(' ', '_') %>"><%= area %></a></li>
+        <% end %>
+      </ul>
+    </aside>
+
+    <section class="main-section">
+      <ul id="tweets">
+      </ul>
+    </section>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+</body>
+</html>
